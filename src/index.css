@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bmi-calculator {
+  max-width: 500px;
+  margin: 10 auto;
+  padding: 30px;
+  background-color: whitesmokeq;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px 12px rgba(1, 1, 1, 0.1);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: var(--color-dark);
+}
+
+form {
+  font-size: 1.6rem;
+  display: flexbox;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.form-split-bill {
+  grid-template-columns: 4fr 12rem;
+  padding: 3.2rem 4rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px; /* Increased margin for spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form .button {
+  margin-top: 0.6rem;
+  grid-column: 2;
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form-split-bill .input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-split-bill .input-group input {
+  width: calc(50% - 5px); /* Adjust width based on desired spacing */
 }
